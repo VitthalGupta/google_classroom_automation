@@ -101,7 +101,7 @@ def join_class(class_name):
 	time.sleep(1)
 	join=driver.find_element_by_xpath('//*[@id="yDmH0d"]/c-wiz/div/div/div[8]/div[3]/div/div/div[2]/div/div[1]/div[2]/div/div[2]/div/div[1]/div[1]/span/span')
 	join.click()
-	time.sleep(15)
+	time.sleep(3600)
 	driver.quit()
 
 #Variable for the classes x-path
