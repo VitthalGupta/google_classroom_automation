@@ -3,10 +3,6 @@
 # 3. Check the variables for class.
 # 4. If you're adding class meet link right click on the link inspect element them right click on the code and then click on copy then xpath, add then add the link to the specified variable
 #
-# Author: Vitthal Gupta 
-#
-# Timetable according to IIIT Bhubneswar EEE 4th Semester
-#
 #
 
 from selenium import webdriver
