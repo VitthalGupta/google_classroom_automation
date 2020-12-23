@@ -3,10 +3,6 @@
 # 3. Check the variables for class.
 # 4. If you're adding class meet link right click on the link inspect element them right click on the code and then click on copy then xpath, add then add the link to the specified variable
 #
-# Author: Vitthal Gupta 
-#
-# Timetable according to IIIT Bhubneswar EEE 4th Semester
-#
 #
 
 from selenium import webdriver
@@ -101,6 +97,7 @@ def join_class(class_name):
 	time.sleep(1)
 	join=driver.find_element_by_xpath('//*[@id="yDmH0d"]/c-wiz/div/div/div[8]/div[3]/div/div/div[2]/div/div[1]/div[2]/div/div[2]/div/div[1]/div[1]/span/span')
 	join.click()
+<<<<<<< HEAD
 #	chat=driver.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[8]/div[3]/div[6]/div[3]/div/div[2]/div[3]/span/span')
 #	chat.click()
 #	greet=driver.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[8]/div[3]/div[3]/div/div[2]/div[2]/div[2]/span[2]/div/div[4]/div[1]/div[1]/div[2]/textarea')
@@ -108,6 +105,9 @@ def join_class(class_name):
 #	greet.send_keys('Good Morning Sir')
 #	greet_send = driver.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[8]/div[3]/div[3]/div/div[2]/div[2]/div[2]/span[2]/div/div[4]/div[2]/span')
 #	greet_send.click()
+=======
+	# Change the duration of the class according to your need (in seconds)
+>>>>>>> a5f5a784054225511c8f3221021212c647dd3844
 	time.sleep(3600)
 	driver.quit()
 
