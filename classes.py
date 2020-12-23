@@ -120,7 +120,7 @@ dec_lab = '//*[@id="yDmH0d"]/div[2]/div/div[2]/div/ol/li[3]/div[1]/div[3]/h2/a[1
 # PASP - Prof. R.K. Nayak 
 pasp = '//*[@id="yDmH0d"]/div[2]/div/div[2]/div/ol/li[4]/div[1]/div[3]/h2/a[1]/div[1]'
 # EEM - Prof. A.P. Hota
-eem = ''
+eem = '//*[@id="yDmH0d"]/div[2]/div[3]/div[2]/div/ol/li[1]/div[1]/div[3]/h2/a[1]/div[1]'
 # DEC- Prof. S.k Mohanty
 dec = '//*[@id="yDmH0d"]/div[2]/div/div[2]/div/ol/li[3]/div[1]/div[3]/h2/a[1]/div[1]'
 # EMFW- Prof. U.R. Raut
@@ -195,7 +195,7 @@ if date(result.tm_year,result.tm_mon,result.tm_mday).weekday() == 1:
 			join_class(dec)
 if date(result.tm_year,result.tm_mon,result.tm_mday).weekday() == 2:
 	if result.tm_hour == 14:
-		if result.tm_min in range (0,10):
+		if result.tm_min in range (0,40):
 			join_class(dec)
 if date(result.tm_year,result.tm_mon,result.tm_mday).weekday() == 3:
 	if result.tm_hour == 11:
