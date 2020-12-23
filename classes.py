@@ -45,7 +45,7 @@ opt.add_experimental_option("prefs", { \
 def join_class(class_name):
 	#Gives path to chrome webdriver and loads classroom webpage 
 	#Change the path according to your os
-	driver=webdriver.Chrome(options=opt, executable_path='/home/phoenix/Documents/College/automation/chromedriver')
+	driver=webdriver.Chrome(options=opt, executable_path='/home/phoenix/Documents/College/automation/google_classroom_automation/chromedriver')
 	driver.get('https://accounts.google.com/ServiceLogin/identifier?service=classroom&passive=1209600&continue=https%3A%2F%2Fclassroom.google.com%2F&followup=https%3A%2F%2Fclassroom.google.com%2F&emr=1&flowName=GlifWebSignIn&flowEntry=AddSession')
 
 	#Logs in the classroom
@@ -101,7 +101,14 @@ def join_class(class_name):
 	time.sleep(1)
 	join=driver.find_element_by_xpath('//*[@id="yDmH0d"]/c-wiz/div/div/div[8]/div[3]/div/div/div[2]/div/div[1]/div[2]/div/div[2]/div/div[1]/div[1]/span/span')
 	join.click()
-	time.sleep(15)
+#	chat=driver.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[8]/div[3]/div[6]/div[3]/div/div[2]/div[3]/span/span')
+#	chat.click()
+#	greet=driver.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[8]/div[3]/div[3]/div/div[2]/div[2]/div[2]/span[2]/div/div[4]/div[1]/div[1]/div[2]/textarea')
+#	greet.click()
+#	greet.send_keys('Good Morning Sir')
+#	greet_send = driver.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[8]/div[3]/div[3]/div/div[2]/div[2]/div[2]/span[2]/div/div[4]/div[2]/span')
+#	greet_send.click()
+	time.sleep(3600)
 	driver.quit()
 
 #Variable for the classes x-path
@@ -126,7 +133,7 @@ em_1_lab = ''
 eem_lab = ''
 
 #Conditional Functions for joining the class
-
+#join_class(pasp)
 #TEST
 #if date(result.tm_year,result.tm_mon,result.tm_mday).weekday() == 4:
 #	if result.tm_hour == 19:
@@ -206,11 +213,11 @@ if date(result.tm_year,result.tm_mon,result.tm_mday).weekday() == 1:
 			join_class(emfw)
 if date(result.tm_year,result.tm_mon,result.tm_mday).weekday() == 2:
 	if result.tm_hour == 11:
-		if result.tm_min in range (5,15):
+		if result.tm_min in range (5,30):
 			join_class(emfw)
 if date(result.tm_year,result.tm_mon,result.tm_mday).weekday() == 3:
 	if result.tm_hour == 14:
-		if result.tm_min in range (0,10):
+		if result.tm_min in range (0,20):
 			join_class(emfw)
 
 # EM-1- Prof. U. Subudhi
@@ -220,11 +227,11 @@ if date(result.tm_year,result.tm_mon,result.tm_mday).weekday() == 1:
 			join_class(em_1)
 if date(result.tm_year,result.tm_mon,result.tm_mday).weekday() == 2:
 	if result.tm_hour == 12:
-		if result.tm_min in range (10,20):
+		if result.tm_min in range (10,40):
 			join_class(em_1)
 if date(result.tm_year,result.tm_mon,result.tm_mday).weekday() == 3:
 	if result.tm_hour == 12:
-		if result.tm_min in range (10,20):
+		if result.tm_min in range (10,40):
 			join_class(em_1)
 if date(result.tm_year,result.tm_mon,result.tm_mday).weekday() == 4:
 	if result.tm_hour == 12:
